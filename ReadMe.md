@@ -2,15 +2,15 @@
 
 ###
 @author : taushif khan
-@email  : tkhan@sidra.org
+@email  : tkhan@sidra.org | taushif.khan@jax.org
 @Date   : 21 Aug 2019
 ###
 
-###Abou:
+### About 
 Given a sequencing output and metadata for sampleIds and fastq files, the pipeline
 propose to provide stepwise analysis and save results in systematic way. The
 
-###How to run
+### How to run
 
 copy the directory PhipSeq_BWH_pipeline/ to location of your choice.
 from terminal. go to the pipeline directory.
