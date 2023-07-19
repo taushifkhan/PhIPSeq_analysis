@@ -1,0 +1,3 @@
+ModuleNotFoundError in line 6 of /gpfs/projects/tmedicine/tkhan/PhipSeq_BWH_pipeline/build_phipSeq.smk:
+No module named 'count_correlation'
+  File "/gpfs/projects/tmedicine/tkhan/PhipSeq_BWH_pipeline/build_phipSeq.smk", line 6, in <module>

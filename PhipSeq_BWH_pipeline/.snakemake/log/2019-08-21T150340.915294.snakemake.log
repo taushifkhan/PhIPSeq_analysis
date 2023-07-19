@@ -1,0 +1,11 @@
+FileNotFoundError in line 6 of /gpfs/projects/tmedicine/tkhan/PhipSeq_BWH_pipeline/build_phipSeq.smk:
+[Errno 2] File b'sample_metadata.csv' does not exist: b'sample_metadata.csv'
+  File "/gpfs/projects/tmedicine/tkhan/PhipSeq_BWH_pipeline/build_phipSeq.smk", line 6, in <module>
+  File "/gpfs/projects/tmedicine/tkhan/PhipSeq_BWH_pipeline/count_correlation.py", line 34, in <module>
+  File "/gpfs/software/tools/env-python/v3.6.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 702, in parser_f
+  File "/gpfs/software/tools/env-python/v3.6.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 429, in _read
+  File "/gpfs/software/tools/env-python/v3.6.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 895, in __init__
+  File "/gpfs/software/tools/env-python/v3.6.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 1122, in _make_engine
+  File "/gpfs/software/tools/env-python/v3.6.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 1853, in __init__
+  File "pandas/_libs/parsers.pyx", line 387, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 705, in pandas._libs.parsers.TextReader._setup_parser_source

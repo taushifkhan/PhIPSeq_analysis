@@ -1,0 +1,5 @@
+[
+    'pathROOT':'/gpfs/projects/SDR_PPM1-1220-150017_nmarr/analysis/SidraOccHealth_vir3/run41_NS500_HKYTMBGX5/fastq_2018-XX-XX/',
+    'rundir':['QBBrun32'],
+    'metadata':'sample_metadata.csv',
+]
