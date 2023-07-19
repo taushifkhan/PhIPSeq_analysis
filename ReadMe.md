@@ -21,12 +21,13 @@ module load env-python/3.6.6
 1. Prepare sample metadata
 the program will take csv file as input. with following fields as columns (at-least),
 
+```
 <sid>,<name_as>,<runId>
 
 sid: sample Identity <unique name of a sample in study>
 name_as : clone (or technical repeats) of the sample all the fastq files will be merged on this name.
 runId : clone name with primer identifier for identification file to be merged.
-
+```
 save the file as csv and proceed to next step.
 
 2. Add data to sample metadata [go to : /DataFile_prePro]
@@ -42,7 +43,7 @@ save the file as csv and proceed to next step.
 
   with all set up run,
   ```
-  python fasqPaths.py
+  python fastqPaths.py
   ```
   The program will search presence of files in give location using the 'runId' and
   add a column "fastqFiles". Additional information on Directory name and sample type my be added.
@@ -83,7 +84,7 @@ shift + a + d
 
 we use 20 nodes with error and output file of the run on specific location.
 
-###Generate nhits for VIRAL EXPOSURE
+### Generate nhits for VIRAL EXPOSURE
 
 ```
 cd pythonModules/
@@ -98,7 +99,7 @@ to evaluate the virus exposure, following peptides are dropped based on backgrou
 from science paper [2015]: eliminated peptides that come at least 3 of 22 immunuprecipitations with beads alone . We also filtered out any peptide that were not enriched in at least two of the sample"
 
 
-###Requirements:
+### Requirements:
 
 The workflow is written in snakemake. Snakemake uses python for providing input \
 output flow to number of different programs that might be used in the whole pipeline.
@@ -115,11 +116,11 @@ c. python
 
 2. To set-up a local run :contact me
 
-###Preparing metadata
+### Preparing metadata
 
 This is most important for this pipeline to run.
 
-###Steps:
+### Steps:
 The pipeline runs with different sets of instructions executed in top to bottom.
 These sets are called "rules". Each rule describes a step in PhIP-seq analysis with
 exclusive set of input and output.
