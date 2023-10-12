@@ -10,6 +10,12 @@
 Given a sequencing output and metadata for sampleIds and fastq files, the pipeline
 propose to provide stepwise analysis and save results in systematic way. The
 
+### Data and script directory
+1. refernce data in a zip compressed file for both virscan and peptidome. unzip and use absolute path
+2. script direcory has all python modules used in the snalemake
+3. The pipeline uses Bowtie and samtools. make sure you have them  in the environment. Change as per your installation status in smk files.
+
+
 ### How to run
 
 copy the directory PhipSeq_BWH_pipeline/ to location of your choice.

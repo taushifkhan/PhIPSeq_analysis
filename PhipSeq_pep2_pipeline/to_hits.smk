@@ -6,19 +6,19 @@ import gzip
 # declare paths and scripts
 
 data_path = {
-        'metadata':'SLED_sample_map_filtered.csv',
-        'mergeDir':'fastQmerged/',
-        'countDir':'alignmentCount/',
-        'phipDir':'phipDir/',
-        'summDir':'resStatistics/',
-        'reference_pep':'/gpfs/projects/tmedicine/tkhan/bwh/reference_seq/',
-        'input':'avg_sled_inputlib.csv.gz',
+        'metadata':'SLED_sample_map_filtered.csv',  # metadata csv file see readme
+        'mergeDir':'fastQmerged/',	# path to store merged fastq files
+        'countDir':'alignmentCount/',	# path to store alignmed bam and count files
+        'phipDir':'phipDir/',		# path to store enrichment results
+        'summDir':'resStatistics/',	
+        'reference_pep':'refSeq/peptidome', # directory has reference sequence unzip the directories in refSeq and provide the path
+        'input':'avg_sled_inputlib.csv.gz', # generate the input count for after the alignment and use this for enrichment
                 }
 
 bwh_path={
-		'pval':'/gpfs/projects/tmedicine/tkhan/bwh/scripts/calc_zipval.py',
-        'zhit':'/gpfs/projects/tmedicine/tkhan/bwh/scripts/call_hits.py',
-        'zscore':'/gpfs/projects/tmedicine/tkhan/bwh/scripts/calc_scores.py'
+		'pval':'scripts/calc_zipval.py',
+        'zhit':'scripts/call_hits.py',
+        'zscore':'scripts/calc_scores.py'
 }
 
 data_meta = pd.read_csv(data_path['metadata'])
